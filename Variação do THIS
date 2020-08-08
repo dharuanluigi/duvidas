@@ -1,0 +1,17 @@
+Fala pessoal, beleza!
+
+Eu fiquei com dúvida no minuto: 06:16 após chamar a função e atribuir ao document a função f2 até 07:02 depois que clica.A dúvida é: depois que atribuiu a função f2 ao document, porque retornou false?
+
+Código abaixo:
+function f2 () {console.log( this === document )}  -> entendi porque retorna false
+
+document.getElementsByTagName('body')[0].onclick = f2
+Porque o retorno da excução acima é false, se está clicando no body? 
+
+Mas quando cria a constante o retorno da true?
+
+const body = document.getElementsByTagName('body')[0]
+function f2() { console.log(this === body)}
+document.getElementsByTagName('body')[0].onclick = f2
+
+Ai quando clica, nesse momento... O porque da true?
